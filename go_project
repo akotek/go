@@ -1,0 +1,51 @@
+
+
+
+
+
+
+TODO (learn)
+-----------
+- memory allocation in GO https://www.youtube.com/watch?v=zjoieOpy5hE
+- Errors in go
+- unitesting in GO
+- methods and interfaces
+- OOP in go
+
+Things used:
+-----------
+
+
+Syntax:
+--------
+0. Variables: decleration+set := (declaring type and setting it content)
+1. types :: int, float, string, rune = alias for int32, bool
+2. No 'while' keyword:: use for{...}
+3. Supports Switch/case
+4. Functions:: func name(param-list) (result-list){...}
+5. Packages: code lives in packages, first letter case determines visibility: Foo is exported, foo is not
+6. Executable commands are from main
+7. (Gofmt): gofmt -w yourcode.go , automatic code formatting. Eliminates debates on style.
+8. Arrays and slices -- Array is passed by copied by value, slice is passed by reference
+    arrays have fixed size -- slices are dynamically sized. slice is like a reference to an array.
+    So if we create a new slice with data - it creats an array and builds a ref to it.
+9. Make- creates a dynamically sized array
+    The make function allocates a zeroed array and returns a slice that refers to that array:
+10. Maps:: map[K]v <-> dict := map[string]int {...} maps are passed by reference
+    maps lookup if key is not found :: returns the zero value
+11. Structs- like C structs
+12. Errors- can use "fmt" errors
+13.
+
+The process:
+-----------
+Go advantages:
+1. memory/type safe (no buffer overflows, ptr arithmetic etc)
+2. Garbage collected!
+3. Statically typed (types have to be declared (int, string)-- checked before runtime) dynamically typed == python.
+so basically we will get compile errors if we do (string)+(int) operation.
+
+Resources:
+1. https://www.seas.upenn.edu/~cis193/schedule/
+2. Go book ("The go programming language")
+3. EffectiveGo
